@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/react-form/static/css/main.797418dd.css",
+    "main.js": "/react-form/static/js/main.17f5d550.js",
+    "static/media/logo.svg": "/react-form/static/media/logo.103b5fa18196d5665a7e12318285c916.svg",
+    "index.html": "/react-form/index.html",
+    "main.797418dd.css.map": "/react-form/static/css/main.797418dd.css.map",
+    "main.17f5d550.js.map": "/react-form/static/js/main.17f5d550.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.797418dd.css",
+    "static/js/main.17f5d550.js"
+  ]
+}
