@@ -28,6 +28,13 @@ font-weight: 500;
   /* italize */
   font-style: italic;
 }
+.btn{
+  margin: 1.5rem;
+  padding: 1rem;
+}
+.remove-container{
+  display: none;
+}
 
 @media screen and (max-width: 580px){
   .container{

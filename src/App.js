@@ -2,6 +2,7 @@ import React,{useState} from 'react';
 import './App.css';
 
 function App() {
+  const [submit,setSubmit] = useState(false);
   const [state, setState] = useState({
     fname: "",
     lname: "",
@@ -10,6 +11,10 @@ function App() {
     gender: "",
     message: "",
   })
+  const handleSubmit = event => {
+    event.preventDefault();
+    setSubmit(true)
+  }
   const handleChange = e => {
     setState({
       ...state,
@@ -19,7 +24,7 @@ function App() {
 
   return (
     <div className='container'>
-      <div className='form-container'>
+      <div className={submit ?'form-container remove-container':'form-container'}>
 
       <h2>React Form Handling</h2>
       <form className='form'>
@@ -107,6 +112,9 @@ function App() {
           onChange={handleChange}
         />
       </label>
+      </div>
+      <div className="btn">
+      <button type="submit" onClick={handleSubmit}>Submit</button>
       </div>
       </form>
       </div>
